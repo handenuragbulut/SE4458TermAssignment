@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >EDUCATION APPOINTMENT FORM</title>
+    <link rel="stylesheet" href="style.css" />    
+  </head>
+  <body>
+    <div class="background-overlay">
+    <header id="main-header">
+      <nav class="navbar">
+        <div class="nav-menu" id="navMenu">
+          <a class='nav-link' href=''>Home</a>
+          <a class='nav-link' href='/Categories.html'>Categories</a>
+          <a class='nav-link' href='/About.html'>About</a>
+          <a class='nav-link' href='/Contact.html'>Contact</a>
+        </div>
+      </nav>
+      <a href="#side-drawer" class="menu-button">
+        <span></span>
+      </a>
+    </header>
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-button">
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href='/'>Home</a>
+          </li>
+          <li>
+            <a href='/Categories.html'>Categories</a>
+          </li>
+          <li>
+            <a href='/About.html'>About</a>
+          </li>
+          <li>
+            <a href='/Contact.html'>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="project-form">
+        <form id="app-form" method="POST">
+          <h3>EDUCATION APPOINTMENT FORM</h3>
+          <br>
+          <input type="text" name="title" id="title" required placeholder="Title"/>
+          <br />
+          <input type="text" id="name" name="name" required placeholder="Your Name"/>
+          <br />
+          <input type="email" id="email" name="email" required placeholder="Email"/>
+          <br />
+          <input type="phonenumber" id="phone" name="phone" placeholder="Phone Number"/>
+          <br>
+          <select id="courseType" name="courseType" required>
+
+            <option value="" disabled selected> Course Type: </option>
+            <option value="" > software</option>
+            <option value="" > hardware</option>
+            <option value="" > bank</option>
+
+          </select>
+          <br>
+          <select name="city" id="city" required>
+            <option value="" disabled selected> City: </option>
+            <option value="" > Izmir</option>
+            <option value="" > Istanbul</option>
+            <option value="" > Ankara</option>
+            <option value="" > Kars</option>
+            <option value="" > Mardin</option>
+            <option value="" > Bursa</option>
+          </select>
+          <br>
+
+          <label id="location-selection" for="contactMethod">How would you like to be located?</label>
+          <br>
+          <select id="contactMethod" name="contactMethod" required>
+            <option value="phonenumber">By phone</option>
+            <option value="email">By email</option>
+          </select>
+          <br>
+      <select name="hours" id="hours">
+            <option value=""selected disabled>Hours: 8 am - 10 pm</option>
+            <option value="8 am">8 am</option>
+            <option value="9 am">9 am</option>
+            <option value="10 am">10 am</option> 
+            <option value="11 am">11 am</option>
+            <option value="12 pm">12 pm</option>
+            <option value="1 pm">1 pm</option>
+            <option value="2 pm">2 pm</option>
+            <option value="3 pm">3 pm</option>
+            <option value="4 pm">4 pm</option>
+            <option value="5 pm">5 pm</option>
+            <option value="6 pm">6 pm</option>
+            <option value="7 pm">7 pm</option>
+            <option value="8 pm">8 pm</option>
+            <option value="9 pm">9 pm</option>
+            <option value="10 pm">10 pm</option>
+      </select>
+          <section id="terms">
+            <input type="checkbox" name="accept-terms" id="accept-terms" required/>
+            <label  for="accept-terms">I agree to the <a href=''>Terms and Conditions</a></label>
+          </section>
+          <br>
+          <div>
+                <input class type="submit" value="Submit" id="submitButton">
+
+          </div>
+        </form>
+        <script src="app.js"></script>
+      </section>
+    </main>
+    </div>
+  </body>
+</html>
